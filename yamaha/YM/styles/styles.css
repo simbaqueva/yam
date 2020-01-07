@@ -1,0 +1,335 @@
+s/* Hoja de estilos modificables connect básico*/
+
+/*Definiciones*/
+
+/* Los siguientes estilos corresponde a el contenedor general, aqui modifique color de fondo.color de fuente Etc... */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color: #fff;
+}
+
+.body-content {
+    background-color: #fff;
+    background-image: none;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lato';
+    color: black;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+iframe.ifrheader{
+    width: 84%;
+    margin: 0 auto;
+    position: relative;
+    border: none;
+    height: 100px;
+    min-height: 80px;
+}
+iframe.ifrfooter{
+    width: 84%;
+    margin: 0 auto;
+    position: relative;
+    border: none;
+    height: 50px;
+    min-height: 50px;
+}
+
+/* Los siguientes estilos corresponde al header, aqui modifique lo correspondiente a esta sección */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.header{
+    background: transparent;
+    text-align: center;
+}
+.header .img-top{
+    text-align: right;
+}
+.header .logo{
+    text-align: left;
+}
+.header .banner{
+    text-align: center;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Los siguientes estilos corresponde a el contenedor de formularios, aqui modifique color de fondo Etc... */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.step-content {
+    border-radius: 10px;
+    background: rgba(245, 245, 245, 0.6);
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los pasos del procesop, aqui modifique lo correspondiente a esta sección */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.body-content .li-step .steps .imas{
+    border-radius: 50%;
+    background: #e1e1e1;
+}
+
+/* Definición de icono para el estado checked*/
+.body-content .li-step .steps .checked::before {
+    content: "\f058";
+}
+
+/* Definición de icono para el estado active*/
+.body-content .li-step .steps .activ::before {
+    content:"\f111";
+}
+
+/* Definición de color para el estado checked*/
+.body-content .li-step .steps .checked {
+    color: #034f8c;
+}
+
+/* Definición de color para el estado active*/
+.body-content .li-step .steps .activ {
+    color: #034f8c;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los campos de formulario, aqui modifique lo correspondiente a estos campos */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estado focus de campos*/
+.input__field--madoka:focus+.input__label--madoka .graphic--madoka {
+    stroke: #034f8c;
+}
+
+/* Estado campo con info*/
+.input--filled .graphic--madoka {
+    stroke: #034f8c;
+}
+
+/* Estilo para color de label en evento focus y campo con información*/
+.input__field--madoka:focus+.input__label--madoka .input__label-content--madoka,
+.input--filled .input__label-content--madoka {
+    color: #034f8c;
+}
+
+/* Estilo para color de label en evento change de las listas desplegables*/
+.body-content .color-labs{
+    color: #034f8c;
+}
+
+/* Estilo para color de borde de las listas desplegables*/
+.body-content .borde-select {
+    border-bottom: 1px solid #034f8c;
+}
+
+/* Estilo para opciones y contenido de las listas*/
+.dropdown-menu > .active > a,
+.dropdown-menu > .selected > a, 
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .selected > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .selected > a:focus {
+    background-color: #F9F9F9;
+    color: #034f8c;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Los siguientes estilos corresponde al los radiobuttons de formulario de validacion y preguntas, aqui modifique lo correspondiente a estos campos */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* estilo de enunciado de la pregunta */
+.body-content .text-question{
+    background: #eee;
+    color: #000;
+    font-size: 14px;
+}
+/* Estilo para el color deicono y borde de la opción */
+.ac-custom label::before {
+    border: 1px solid #034f8c;
+    color: #034f8c;
+}
+
+/* Estilo para las esquinas #034f8condeadas de las opciones*/
+.ac-radio label::before {
+    border-radius: 50%;
+}
+
+/* Definición de icono para los estados checked */
+.ac-custom input[type="radio"]:checked+label::before {
+    content: "\f058";
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Los siguientes estilos corresponde al los botones usados en el procespo, aqui modifique lo correspondiente a los botones */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.body-content .btn {
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+/* Estilo botón para formularios*/
+.body-content .btn-form {
+    background-color: #034f8c;
+    color: #fff;
+    border-color: #034f8c;
+}
+.body-content .btn-form:hover {
+    color: #fff;
+    opacity: 0.8;
+
+}
+
+/* Estilo botón generico*/
+.body-content .btn-general {
+    background-color: #7d7d7d;
+    color: #fff;
+}
+.body-content .btn-general:hover {
+    opacity: 0.8;
+    color: #fff;
+
+
+
+}
+
+/* Estilo botón para imprimir*/
+.body-content .btn-print {
+    background-color: #034f8c;
+    color: #fff;
+    border-color: #034f8c;
+}
+.body-content .btn-print:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+.body-content .btn-print::before{
+   content: "\f02f";
+}
+
+/* Estilo para icono de impresión si se desea esta opción para imprimir*/
+.body-content .cont-print{
+    background: #034f8c;
+    padding: 4%;
+    border-radius: 10px;
+}
+.body-content .icon-print{
+    color: #fff;
+}
+.body-content .icon-print::before{
+    content: "\f02f";
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a fuentes, titulos, textos etc... modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilo para tíuulo de los términos y condiciones*/
+.body-content .title-term {
+    color: #034f8c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* Estilo para subtítulo de los términos y condiciones*/
+.body-content .subtitle-term {
+    font-size: 16px;
+    color: #000;
+}
+
+/* Estilo para fuentes con estilo italic, afecta varios textos en la pagina*/
+.body-content .italic {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Estilo para fuentes con estilo negrita, afecta varios textos en la pagina*/
+.body-content .bolds {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.body-content .color-one {
+    color: #034f8c;
+    font-style: normal;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.body-content .color-two {
+    color: green;
+    font-style: normal;
+}
+
+/* Estilo para fuente de color especifico, afecta varios textos en la pagina*/
+.body-content .color-thre {
+    color: #000;
+    font-style: normal;
+}
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a las alertas de validación de formularios, modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.formError .formErrorContent{
+    background: #034f8c;
+    color: #fff;
+    border-radius: 6px;
+}
+.formError .formErrorArrow div{
+    background: #034f8c;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Los siguientes estilos corresponden a la sección del footer, modifique aquí lo que corresponda */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* Estilo para el contenedor del footer*/
+.footer-content {
+    background: transparent;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilo para texto del footer*/ 
+.footer-content .text-foot{
+    text-align: left;
+    color: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    font-style: normal;
+}
+
+/* Estilo para imagen del footer*/ 
+.footer-content .img-foot{
+   text-align: right;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
